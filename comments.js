@@ -1,11 +1,9 @@
-// create web server
 // create a web server and listen for incoming requests
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
 const path = require('path');
 
-// create web server
 const server = http.createServer((req, res) => {
     // parse the url
     const parsedUrl = url.parse(req.url, true);
